@@ -87,6 +87,7 @@ Resources:
       Code:
         ZipFile: |
         def lambda_handler(event, context):
+          WRITE YOUR CODE HERE IT DEPENDS OF YOUR DB ENGINE
           pass  
       Role:
         Fn::GetAtt:
