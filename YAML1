@@ -1,0 +1,10 @@
+Resources:
+  TemplatedSecret3D98B577:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      GenerateSecretString:
+        GenerateStringKey: password
+        SecretStringTemplate: '{"username": "johndoe", "db-url": "whatever-url"}'
+      Tags:
+        - Key: project-name
+          Value: Secrets-Manager
